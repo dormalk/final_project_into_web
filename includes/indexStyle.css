@@ -1,0 +1,406 @@
+@font-face {
+    font-family: "Alef";
+    src:    url('../fonts/Alef.svg') format('svg'),
+            url('../fonts/Alef.ttf') format('truetype'),
+            url('../fonts/Alef.woff') format('woff2'),
+            url('../fonts/Alef.eot');
+}
+
+body {
+    margin: 0px auto;
+    background-color: #f2f3f5;
+    font-family: 'Alef';
+}
+
+
+
+body header {
+    display: block;
+}
+body header a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Alef';
+    font-size: 28px;
+    position: absolute;
+    top: 65px;
+    right: 95px;
+}
+
+body header a span{
+    color:#808080;
+}
+
+#menu{
+    display: none;
+}
+
+main {
+    display: block;
+    margin: 0px auto;
+    margin-top: -80px;
+    width: 85%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline;
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Alef';
+    font-size: 12px;
+}
+
+nav ul li a:hover {
+    color: #976146;
+}
+
+nav {
+    position: relative;
+    width: 15%;
+    float: right;
+    display: block;
+}
+
+aside {
+    float: right;
+    position: relative;
+    padding-right: 60px;
+    width: 70%;
+}
+
+section {
+    float: right;
+    position: relative;
+}
+
+
+.indexSection article {
+    background-image: url('../textures/texture.svg');
+    display: inline-block;
+}
+
+.indexSection h5 {
+    margin:10px;
+}
+.indexSection h5 b{
+    background-color: #f2f3f5;
+}
+
+#ivtvSection article {
+    width: 254px;
+    height: 390px;
+}
+
+#updateSection article {
+    width: 205px;
+    height: 400px;
+}
+
+#showsSection article {
+    width: 145px;
+    height: 160px;
+}
+
+#detailSection article{
+    width:225px;
+    height:390px;
+    border: #E6E6E6 1px solid;
+}
+#massageSection article{
+    width: 365px;
+    height:390px;
+    margin-right: 32px;
+    border: #E6E6E6 1px solid;
+}
+.conSection article {
+    background-image: url('../textures/texture.svg');
+    display: inline-block;
+}
+
+.conSection .lableStyle{
+    padding: 3px 5px;
+    background-color: black;
+    color:#ffffff;
+    font-size: 12px;
+}
+
+.conSection .inputStyle{
+    width: 100%;
+    height: 20px;
+    background-color: black;
+    border: 0px;
+    color:#ffffff;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.conSection .ButtonStyle{
+    background-color: black;
+    border: 0px;
+    color:#ffffff;
+    float:left;
+    padding:3px 5px;
+    padding-left: 40px;
+    margin-right: 5px;
+}
+
+.conSection #inputStyleArea {
+    height: 140px;
+    padding: 0px;
+    resize: none;
+}
+#biography article {
+    width: 75%;
+    height: auto;
+    flex-direction: row;
+    direction: rtl;
+    display: flex;
+}
+
+#biography .imgCoverSvg{
+    height: 100%;
+    width:90px;
+}
+
+#biography .imgCoverSvg{
+    background-image: url('../textures/texture.svg');
+    z-index: 3;
+}
+#biography #articalImg{
+    background-image: url('../images/ivripic3.png');
+    background-size: cover;
+}
+#biography article #articalText{
+    position: relative;
+    background-color: #d7d7d7;
+    color: #000000;
+    width:auto;
+    height: auto;
+    padding:3.75vw 4.16vw 3.75vw 2.5vw;
+    font-size:11px;
+}
+
+.indexSection article h5 {
+    position: relative;
+    background-color: black;
+    color: #ffffff;
+    padding: 0px 10px;
+    margin-top:-17px;
+    margin-right: 0px;
+    margin-bottom: -5px;
+}
+
+.indexSection article img {
+    margin-bottom: -6px;
+}
+
+.indexSection article p {
+    background-color: #1e1e1e;
+    color: #8c8c8c;
+    font-size: 12px;
+    padding: 15px;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.indexSection p span {
+    color: #ffffff;
+    font-size: 10px;
+}
+
+#updateSection {
+    margin-right: 10px;
+}
+
+#showsSection {
+    margin-right: 65px;
+}
+
+#albumsList article{
+    width:185px;
+    min-height: 390px;
+}
+
+#singlesList{
+    display: none;
+}
+
+#singlesList article{
+    display: block;
+    width:185px;
+    min-height: 390px;
+    margin-right: 45px;
+}
+
+#singlesList .empyTitle{
+    height:20px;
+    display: block;
+}
+.albumSingelList .List .singleTitle{
+    font-size:12px;
+    width:auto;
+    display: block;
+    background-color: white;
+    padding: 1px 5px;
+    margin-bottom:3px;
+}
+
+#singlesList .singleTitle{
+    font-size:12px;
+    width:auto;
+    display: block;
+    background-color: white;
+    padding: 1px 5px;
+    margin-bottom:3px;
+}
+
+
+#albumsList .albumTitle{
+    display: block;
+    background-color: black;
+    color:white;
+    margin-bottom: 3px;
+    position:relative;
+    z-index: 100;
+    padding:1px 15px;
+    font-size:11px;
+}
+
+#albumsList .albumSingelList{
+    display: none;
+    height: 390px;
+    width:100%;
+}
+#albumsList .albumRelease2{
+    display: block;
+    background-color: black;
+    color:white;
+    padding: 1px 10px;
+}
+
+#albumsList .albumRelease{
+    display: block;
+    opacity:0;
+}
+
+
+#albumsList .albumImg{
+    display: none;
+}
+
+#albumsList .albumRelease{
+    float: left;
+}
+
+
+
+.albumImg img{
+    display: block;
+    width:100%;
+    margin-top:-3px;
+}
+
+#musicSection article {
+    background-image: url('../textures/texture.svg');
+    display: inline-block;
+}
+
+
+footer {
+    width: 100%;
+    height: 40px;
+    clear: both;
+}
+
+
+@media (max-width: 520px){
+    body header svg{
+        height:39px;
+    }
+    body header {
+        display: block;
+        height:39px;
+        border-bottom: #b4b4b6 1px solid;
+    }
+    body header a {
+        position: absolute;
+        font-size: 25px;
+        top:0;
+        right: 55px;
+    }
+    body header a br{
+        display: none;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-image:url('../images/menu.png') ;
+    }
+    main {
+        margin: 10px auto;
+    }
+
+    nav{
+        display: none;
+        width:100%;
+    }
+    nav ul {
+        list-style-type: none;
+        display: inline;
+        margin:0px auto;
+    }
+    nav ul li {
+        margin:5px 30px;
+    }
+    nav ul li a{
+        font-size:18px;
+    }
+    aside {
+        padding-right: 0px;
+        width:auto;
+    }
+    #biography article {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin:0px auto;
+    }
+
+    #biography .imgCoverSvg{
+        height: 120px;
+        width:100%;
+    }
+
+    #biography #articalImg{
+        background-image: url('../images/ivripic4.png');
+    }
+
+    #detailSection article{
+        width: 100%;
+        height: auto;
+        margin:0px auto;
+        margin-top: 10px;
+    }
+    #massageSection{
+        width:100%;
+    }
+    #massageSection article{
+        width: 100%;
+        height: auto;
+        margin:0px auto;
+        margin-top: 10px;
+    }
+    #albumsList article{
+        width:85vw;
+        margin:0px auto;
+    }
+}
+
