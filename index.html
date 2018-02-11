@@ -3,81 +3,87 @@
     <meta charset="UTF-8">
     <title>עיברי לידר - פרויקט סוף קורס</title>
     <link rel="stylesheet" type="text/css" href="includes/indexStyle.css">
-    <script src="includes/jquery-3.2.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="includes/indexScript.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body id="index" dir="rtl">
-    <header>
-        <a href="#">עברי לידר</a>
-        <div id="menu"></div>
-    </header>
-    <main>
-        <nav>
-            <ul>
-                <li><a href="#">הופעות</a></li>
-                <li><a href="music.html">מוזיקה</a></li>
-                <li><a href="#">חנות</a></li>
-                <li><a href="#"><b>IV.TV</b></a></li>
-                <li><a href="#">עדכונים</a></li>
-                <li><a href="bio.html">ביוגרפיה</a></li>
-                <li><a href="#">תמונות</a></li>
-                <li><a href="#">הורדות</a></li>
-                <li><a href="contact.html">קשר</a></li>
-            </ul>
-        </nav>
-        <aside class="indexSection">
-            <section id="ivtvSection">
-                <h5><b>IV.TV</b></h5>
-                <article>
-                    <img src="images/ivripic.png">
-                    <h5>זה לא אותו דבר - הופעה בזאפה</h5>
-                    <p>
+    <body>
+        <header>
+            <a href="#">עברי לידר</a>
+            <svg width="100%" height="250" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="125" cy="10" r="3" fill="#b4b4b6" stroke="none"></circle>
+                <circle cx="330" cy="40" r="3" fill="#b4b4b6" stroke="none"></circle>
+                <circle cx="600" cy="30" r="3" fill="#b4b4b6" stroke="none"></circle>
+                <circle cx="770" cy="20" r="3" fill="#b4b4b6" stroke="none"></circle>
+                <circle cx="950" cy="80" r="3" fill="#b4b4b6" stroke="none"></circle>
+                <circle cx="950" cy="110" r="3" fill="#b4b4b6" stroke="none"></circle>
+                <circle cx="950" cy="150" r="3" fill="#b4b4b6" stroke="none"></circle>
+                <circle cx="960" cy="150" r="3" fill="#b4b4b6" stroke="none"></circle>
+                <circle cx="950" cy="160" r="3" fill="#b4b4b6" stroke="none"></circle>
+                <circle cx="950" cy="175" r="3" fill="#b4b4b6" stroke="none"></circle>
+            </svg>
+            <nav id="menuButton"></nav>
+        </header>
+        <main class="textureViewer" id="indexCorrections">
+            <nav>
+                <ul></ul>
+            </nav>
+                <section id="ivtvSection">
+                    <h5><b>IV.TV</b></h5>
+                    <article>
+                        <img src="images/ivripic.png">
+                        <h5>זה לא אותו דבר - הופעה בזאפה</h5>
+                        <p>
+                                לאחר שבועיים רצופים של ירידות, ביום שני, ערב חג רשמו המדדים בארה"ב.
+                            <br>
+                            <span>עלה בתאריך 12/10/08 אורך וידיאו: 11:28</span>
+                        </p>
+
+                    </article>
+                </section>
+                <section id="updateSection">
+                    <h5><b>עדכונים</b></h5>
+                    <article>
+                        <img src="images/ivripic2.png">
+                        <p>
+                            <span>2/10/08</span>
+                            <br>
+                            לאחר שבועיים רצופים של ירידות.
+                        </p>
+                        <p>
+                            <span>6/11/08</span>
+                            <br>
                             לאחר שבועיים רצופים של ירידות, ביום שני, ערב חג רשמו המדדים בארה"ב.
-                        <br>
-                        <span>עלה בתאריך 12/10/08 אורך וידיאו: 11:28</span>
-                    </p>
+                        </p>
 
-                </article>
+                    </article>
+                    <div class="clear"></div>
+                </section>
+
+                <section id="showsSection">
+                    <h5><b>הופעות</b></h5>
+                    <article>
+                        <p>
+                            <span>2/10/08</span>
+                            <br>
+                            טבריה - אמפי צמח
+                        </p>
+                        <p>
+                            <span>23/10/08</span>
+                            <br>
+                           תל אביב - האנגר 11
+                        </p>
+                    </article>
+                </section>
+            <section id="playerPanel">
+                <audio id="player" autoplay loop>
+                    <source src="audio/Ivri_Lider_MOOGZAM.ogg" type="audio/ogg" />
+                    <source src="audio/Ivri_Lider_MOOGZAM.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                </audio>
+                <button onclick="document.getElementById('player').pause()">עצור</button>
+                <button onclick="document.getElementById('player').play()">נגן</button>
             </section>
-            <section id="updateSection">
-                <h5><b>עדכונים</b></h5>
-                <article>
-                    <img src="images/ivripic2.png">
-                    <p>
-                        <span>2/10/08</span>
-                        <br>
-                        לאחר שבועיים רצופים של ירידות.
-                    </p>
-                    <p>
-                        <span>6/11/08</span>
-                        <br>
-                        לאחר שבועיים רצופים של ירידות, ביום שני, ערב חג רשמו המדדים בארה"ב.
-                    </p>
-
-                </article>
-                <div class="clear"></div>
-            </section>
-
-            <section id="showsSection">
-                <h5><b>הופעות</b></h5>
-                <article>
-                    <p>
-                        <span>2/10/08</span>
-                        <br>
-                        טבריה - אמפי צמח
-                    </p>
-                    <p>
-                        <span>23/10/08</span>
-                        <br>
-                       תל אביב - האנגר 11
-                    </p>
-                </article>
-            </section>
-        </aside>
-    </main>
-    <footer>
-
-    </footer>
-</body>
+        </main>
+    </body>
 </html>

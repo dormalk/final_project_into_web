@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>עיברי לידר - פרויקט סוף קורס</title>
+    <link rel="stylesheet" type="text/css" href="includes/indexStyle.css">
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="includes/indexScript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+    <a href="index.html">עברי לידר<br><span>/עדכונים</span></a>
+    <svg width="100%" height="250" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="122" cy="10" r="3" fill="#b4b4b6" stroke="none"></circle>
+        <circle cx="630" cy="10" r="3" fill="#b4b4b6" stroke="none"></circle>
+        <circle cx="810" cy="30" r="3" fill="#b4b4b6" stroke="none"></circle>
+        <circle cx="1035" cy="145" r="3" fill="#b4b4b6" stroke="none"></circle>
+        <circle cx="1050" cy="145" r="3" fill="#b4b4b6" stroke="none"></circle>
+        <circle cx="1060" cy="145" r="3" fill="#b4b4b6" stroke="none"></circle>
+        <circle cx="1100" cy="145" r="3" fill="#b4b4b6" stroke="none"></circle>
+        <circle cx="1130" cy="145" r="3" fill="#b4b4b6" stroke="none"></circle>
+        <circle cx="1060" cy="155" r="3" fill="#b4b4b6" stroke="none"></circle>
+    </svg>
+    <div id="menuButton"></div>
+</header>
+<main class="textureViewer" id="updatePage">
+    <nav>
+        <ul></ul>
+    </nav>
+        <section id="updateDate">
+            <article>
+            </article>
+        </section>
+        <section id="updateList">
+            <article>
+            </article>
+        </section>
+        <section id="updateListMobile">
+            <article>
+            </article>
+        </section>
+        <section id="newsPick">
+            <article>
+            </article>
+        </section>
+        <div id="playerPanel">
+            <audio id="player" loop>
+                <source src="audio/Ivri_Lider_MOOGZAM.ogg" type="audio/ogg" />
+                <source src="audio/Ivri_Lider_MOOGZAM.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
+            <button onclick="document.getElementById('player').pause()">עצור</button>
+            <button onclick="document.getElementById('player').play()">נגן</button>
+        </div>
+</main>
+</body>
+</html>

@@ -1,23 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Alef');
 @font-face {
-    font-family: "Alef";
-    src:    url('../fonts/Alef.svg') format('svg'),
-            url('../fonts/Alef.ttf') format('truetype'),
-            url('../fonts/Alef.woff') format('woff2'),
-            url('../fonts/Alef.eot');
+    font-family: 'Alef', sans-serif;
 }
 
 body {
     margin: 0px auto;
     background-color: #f2f3f5;
     font-family: 'Alef';
+    direction:rtl;
 }
-
-
-
-body header {
+header {
     display: block;
 }
-body header a {
+header a {
     text-decoration: none;
     color: #000000;
     font-family: 'Alef';
@@ -26,12 +21,11 @@ body header a {
     top: 65px;
     right: 95px;
 }
-
-body header a span{
+header a span{
     color:#808080;
 }
 
-#menu{
+#menuButton{
     display: none;
 }
 
@@ -40,61 +34,90 @@ main {
     margin: 0px auto;
     margin-top: -80px;
     width: 85%;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
 }
 
-nav ul {
-    list-style-type: none;
-    display: inline;
-}
-
-
-
-nav ul li a {
-    text-decoration: none;
-    color: #000000;
-    font-family: 'Alef';
-    font-size: 12px;
-}
-
-nav ul li a:hover {
-    color: #976146;
-}
 
 nav {
     position: relative;
     width: 15%;
     float: right;
     display: block;
+    margin-left: 20px;
 }
 
-aside {
-    float: right;
-    position: relative;
-    padding-right: 60px;
-    width: 70%;
+
+nav ul {
+    list-style-type: none;
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Alef';
+    font-size: 12px;
+}
+nav a:hover {
+    color: #976146;
 }
 
 section {
-    float: right;
     position: relative;
 }
 
-
-.indexSection article {
+.textureViewer article{
     background-image: url('../textures/texture.svg');
-    display: inline-block;
+    margin-top:30px;
 }
 
-.indexSection h5 {
-    margin:10px;
+/*Index page design*/
+#indexCorrections article h5 {
+    position: relative;
+    background-color: black;
+    color: #ffffff;
+    padding: 0px 10px;
+    margin-top:-17px;
+    margin-right: 0px;
+    margin-bottom: -5px;
 }
-.indexSection h5 b{
-    background-color: #f2f3f5;
+
+#indexCorrections article{
+    margin-top:-15px;
 }
+
+#indexCorrections article img {
+    margin-bottom: -6px;
+}
+
+#indexCorrections article p {
+    background-color: #1e1e1e;
+    color: #8c8c8c;
+    font-size: 12px;
+    padding: 15px;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+#indexCorrections p span {
+    color: #ffffff;
+    font-size: 10px;
+}
+
 
 #ivtvSection article {
     width: 254px;
     height: 390px;
+}
+
+#updateSection {
+    margin-right: 10px;
+}
+
+#showsSection {
+    margin-right: 65px;
 }
 
 #updateSection article {
@@ -107,30 +130,41 @@ section {
     height: 160px;
 }
 
-#detailSection article{
-    width:225px;
-    height:390px;
-    border: #E6E6E6 1px solid;
+#playerPanel{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left:0px;
 }
-#massageSection article{
-    width: 365px;
-    height:390px;
-    margin-right: 32px;
-    border: #E6E6E6 1px solid;
-}
-.conSection article {
-    background-image: url('../textures/texture.svg');
-    display: inline-block;
+#playerPanel button{
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+    transform: rotate(270deg);
+    margin-top:30px;
+    background-color: Transparent;
+    border: none;
 }
 
-.conSection .lableStyle{
+#playerPanel button:hover{
+    background-color: black;
+    color:#ffffff
+}
+/*End index page design*/
+
+/*Contact form design*/
+#contactPage form{
+    display: flex;
+    flex-direction: row;
+}
+
+.lableStyle{
     padding: 3px 5px;
     background-color: black;
     color:#ffffff;
     font-size: 12px;
 }
 
-.conSection .inputStyle{
+.inputStyle{
     width: 100%;
     height: 20px;
     background-color: black;
@@ -140,7 +174,7 @@ section {
     font-size: 12px;
 }
 
-.conSection .ButtonStyle{
+.ButtonStyle{
     background-color: black;
     border: 0px;
     color:#ffffff;
@@ -150,12 +184,36 @@ section {
     margin-right: 5px;
 }
 
-.conSection #inputStyleArea {
+#inputStyleArea {
     height: 140px;
     padding: 0px;
     resize: none;
 }
+
+#detailSection{
+    width:225px;
+}
+
+#massageSection article{
+    width: 365px;
+    height:390px;
+    margin-right: 32px;
+    border: #E6E6E6 1px solid;
+}
+h4{
+    margin-right:40px;
+    margin-bottom: 10px;
+}
+/*End contact form design*/
+
+
+/*Biography page design*/
+#biography{
+    margin-right:100px;
+}
+
 #biography article {
+    margin-top:25px;
     width: 75%;
     height: auto;
     flex-direction: row;
@@ -164,19 +222,18 @@ section {
 }
 
 #biography .imgCoverSvg{
+    background-image: url('../textures/texture.svg');
+    z-index: 3;
     height: 100%;
     width:90px;
 }
 
-#biography .imgCoverSvg{
-    background-image: url('../textures/texture.svg');
-    z-index: 3;
-}
-#biography #articalImg{
+#articalImg{
     background-image: url('../images/ivripic3.png');
     background-size: cover;
 }
-#biography article #articalText{
+
+#biographyText{
     position: relative;
     background-color: #d7d7d7;
     color: #000000;
@@ -186,78 +243,58 @@ section {
     font-size:11px;
 }
 
-.indexSection article h5 {
-    position: relative;
-    background-color: black;
-    color: #ffffff;
-    padding: 0px 10px;
-    margin-top:-17px;
-    margin-right: 0px;
-    margin-bottom: -5px;
-}
+/*End biography design*/
 
-.indexSection article img {
-    margin-bottom: -6px;
-}
-
-.indexSection article p {
-    background-color: #1e1e1e;
-    color: #8c8c8c;
-    font-size: 12px;
-    padding: 15px;
-    margin: 0px;
-    margin-bottom: 5px;
-}
-
-.indexSection p span {
-    color: #ffffff;
-    font-size: 10px;
-}
-
-#updateSection {
-    margin-right: 10px;
-}
-
-#showsSection {
-    margin-right: 65px;
-}
-
+/*Music page design*/
 #albumsList article{
+    margin-top:25px;
     width:185px;
     min-height: 390px;
 }
 
-#singlesList{
+#singlesList,#singleShow{
     display: none;
 }
 
 #singlesList article{
+    margin-top:25px;
     display: block;
     width:185px;
     min-height: 390px;
     margin-right: 45px;
 }
 
-#singlesList .empyTitle{
+#singleShow article{
+    background-image: none;
+    background-color: #d7d7d7;
+    margin-top:-168px;
+    display: block;
+    width:275px;
+    min-height: 600px;
+    margin-right: 45px;
+}
+.lyrics{
+    padding: 10px 15px;
+    font-size:12px;
+}
+
+.singleShowMobile{
+    background-color: #d7d7d7;
+    display: none;
+    width:100%;
+}
+
+#singlesList .emptyTitle{
     height:20px;
     display: block;
 }
-.albumSingelList .List .singleTitle{
+.singleTitle{
     font-size:12px;
-    width:auto;
-    display: block;
-    background-color: white;
-    padding: 1px 5px;
+    width:fit-content;
+    background-color: #d7d7d7;
+    padding: 1px 20px;
     margin-bottom:3px;
-}
-
-#singlesList .singleTitle{
-    font-size:12px;
-    width:auto;
     display: block;
-    background-color: white;
-    padding: 1px 5px;
-    margin-bottom:3px;
 }
 
 
@@ -272,11 +309,12 @@ section {
     font-size:11px;
 }
 
-#albumsList .albumSingelList{
-    display: none;
-    height: 390px;
+.albumSingelList{
+    display:none;
+    padding-bottom: 20px;
     width:100%;
 }
+
 #albumsList .albumRelease2{
     display: block;
     background-color: black;
@@ -298,59 +336,164 @@ section {
     float: left;
 }
 
-
-
 .albumImg img{
     display: block;
     width:100%;
     margin-top:-3px;
 }
 
-#musicSection article {
-    background-image: url('../textures/texture.svg');
-    display: inline-block;
+iframe{
+    width:100%;
 }
 
 
-footer {
+/*End music design*/
+
+/*Admin Page design*/
+#addNewAlbum article{
+    width:225px;
+    border: #E6E6E6 1px solid;
+    margin-left: 20px;
+}
+#addNewSingle article{
+    width:225px;
+    border: #E6E6E6 1px solid;
+    margin-left: 20px;
+}
+
+#removeSection article{
+    width:225px;
+    border: #E6E6E6 1px solid;
+}
+
+
+/*End Admin page design*/
+
+/*Start Update Page Design*/
+
+#updateDate article{
+    width: 80px;
+    min-height: 390px;
+    margin-left:22px;
+}
+
+#updatePage p{
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 2px;
+}
+
+#updateList article{
+    width: 215px;
+    min-height: 390px;
+    margin-left:50px;
+}
+
+#newsPick article{
+    width: 380px;
+    min-height: 390px;
+}
+
+#newsPick img {
+    display:block;
+    width:100%;
+}
+
+#newsPick p {
+    text-align: right;
+}
+#updateListMobile,#updateListMobile article {
+    width:100%;
+}
+#updateListMobile,#newsPick span {
+    display: none;
+}
+#updateListMobile article{
     width: 100%;
-    height: 40px;
-    clear: both;
+    height: auto;
+    flex-direction: column;
+    display: flex;
 }
 
+.upsPicked {
+    display: none;
+    padding: 0px;
+}
+
+
+.upsPicked img{
+    width:100%;
+    margin-top: -4px;
+    margin-bottom: -6px;
+}
+
+
+/*End Update Page Design*/
+
+#loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height:100%;
+    background-color: rgba(250, 250, 250, 0.6);
+    display: none;
+    vertical-align:middle;
+
+}
+
+#loadBar{
+    background-image: url("../images/load.gif");
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0px auto;
+    position: relative;
+    top: 25%;
+}
 
 @media (max-width: 520px){
-    body header svg{
-        height:39px;
-    }
-    body header {
+    header {
         display: block;
         height:39px;
         border-bottom: #b4b4b6 1px solid;
     }
-    body header a {
+    header a {
         position: absolute;
         font-size: 25px;
         top:0;
         right: 55px;
     }
-    body header a br{
+    header a br{
         display: none;
     }
-    #menu{
+    #menuButton{
         display: block;
         position: absolute;
         width: 40px;
         height: 40px;
         background-image:url('../images/menu.png') ;
     }
-    main {
-        margin: 10px auto;
+    header svg{
+        display: none;
     }
 
+    main {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top:100px;
+    }
     nav{
         display: none;
         width:100%;
+        top: -30px;
     }
     nav ul {
         list-style-type: none;
@@ -363,10 +506,22 @@ footer {
     nav ul li a{
         font-size:18px;
     }
-    aside {
-        padding-right: 0px;
-        width:auto;
+
+    #ivtvSection,#updateSection,#showsSection{
+        width: 100%;
+        margin:0px 0px;
     }
+
+    #ivtvSection img,#updateSection img{
+        width: 100%;
+    }
+
+    #showsSection article,#updateSection article,#ivtvSection article{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
     #biography article {
         width: 100%;
         height: auto;
@@ -394,13 +549,60 @@ footer {
     }
     #massageSection article{
         width: 100%;
-        height: auto;
+        height: 230px;
         margin:0px auto;
         margin-top: 10px;
     }
     #albumsList article{
         width:85vw;
         margin:0px auto;
+    }
+    #albumsList .albumTitle{
+        font-size:1.2em;
+    }
+    .returnButton{
+        width: 100%;
+        height:10px;
+        background-color: black;
+        color:red;
+        font-size: 15px;
+        padding: 3px 0px;
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+
+    #updateList,#newsPick article,#updateDate,.albumRelease{
+        display: none;
+    }
+
+    #updateListMobile,#contactPage form{
+        display: block;
+    }
+    #biography{
+        margin-right:0px;
+    }
+    #detailSection{
+        width:100%;
+    }
+    #playerPanel{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom:-25px;
+    }
+    #playerPanel button{
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+        margin-top:10px;
+        background-color: Transparent;
+        border: none;
+    }
+
+    #adminPage article{
+        width:100%;
+        padding-bottom: 25px;
     }
 }
 
