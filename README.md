@@ -26,3 +26,5 @@
 ## Links
   <a href="https://goo.gl/BG3ij3">Link to main site</a> \
   <a href="https://goo.gl/fFA3LY">Link to admin page</a>
+## Project status
+  done
