@@ -2,7 +2,7 @@
   Final Project of 'Intro web development'.
   Fans site include Admin page for management albums archives.
 ## Implementation
-  - HTML, CSS, jQuery, php
+  - HTML, CSS, jQuery,ajax php
   - DB: phpMyAdmin
 ## What's include
   - Index page - present updates
